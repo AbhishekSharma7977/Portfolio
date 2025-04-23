@@ -9,58 +9,57 @@
   <link rel="stylesheet" href="style.css" />
 
   <!-- Font Awesome -->
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-  <!-- JS -->
+  <!-- JavaScript -->
   <script defer src="script.js"></script>
 </head>
 <body>
   <!-- Header -->
   <header>
     <h1>Abhishek Sharma</h1>
-    <div class="social-icons">
-      <a href="https://github.com/AbhishekSharma7977" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/abhisheksharma7977" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/thetyagiabhishek" target="_blank"><i class="fab fa-instagram"></i></a>
-
-    </div>
+    <nav id="sidebar">
+      <a href="#about"><i class="fas fa-user"></i> About</a>
+      <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+      <a href="#project"><i class="fas fa-project-diagram"></i> Projects</a>
+      <a href="#certifications"><i class="fas fa-certificate"></i> Cert</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      
+    </nav>
   </header>
+  
 
   <!-- Toggle Button -->
   <div id="menu-toggle">
     <i class="fas fa-bars"></i>
   </div>
 
-  <!-- Sidebar Navigation -->
-  <nav id="sidebar">
-    <a href="#about"><i class="fas fa-user"></i> About</a>
-    <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-    <a href="#project"><i class="fas fa-project-diagram"></i> Projects</a>
-    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-    <a href="#certifications"><i class="fas fa-certificate"></i> Cert</a>
-  </nav>
-
   <!-- Main Content -->
   <main>
+    <!-- About Section -->
     <section id="about">
-      <img src="image.jpg" alt="Abhishek Sharma" class="profile-img" />
-      <a href="https://drive.google.com/file/d/1nhAkMSpTizcPTRf2dhttakVfGeS9A1MV/view?usp=sharing" download><div style="text-align: center; margin-top: 50px;">
-        <button style="padding: 10px 20px; font-size: 16px; border-radius: 8px; background-color: #0c2cc9; color: white; border: none; cursor: pointer;">
-          Download CV
-        </button>
+      <div class="profile-wrapper">
+        <img src="image.jpg" alt="Photo of Abhishek Sharma" class="profile-img" />
+        <h3 class="profile-title">Web Developer & Tech Explorer</h3>
       </div>
-      
-         
-        </button>
-      </a>
-      
+    
       <h2>About Me</h2>
       <p>
-        A Student of Bachelor in Technology in Computer Science from Lovely Professional University and would be getting specialization in UI/UX or Artificial Intelligence/Machine Learning. I have learnt various Computer Languages including HTML5, CSS, JAVA, PYTHON and always exploring much more languages I can. I Have also been an active attendee of Google Developer Student Club.
+        I'm <strong>Abhishek Sharma</strong>, a passionate and creative web developer, currently pursuing B.Tech in Computer Science at <strong>Lovely Professional University</strong>. With a deep love for designing seamless user experiences and building smart digital solutions, I specialize in <strong>UI/UX Design</strong> and <strong>Artificial Intelligence/Machine Learning</strong>.
+      </p>
+      <p>
+        From writing my first line of HTML to experimenting with neural networks in Python, my journey has been a wild ride of curiosity, learning, and endless code. I’ve explored technologies like <strong>HTML5, CSS, Java, Python</strong> and I’m constantly pushing my boundaries to learn more.
+      </p>
+      <p>
+        As an active member of the <strong>Google Developer Student Club</strong>, I thrive in collaborative environments and love turning ideas into reality. Whether it’s crafting stunning websites, solving real-world problems with code, or mentoring juniors — I bring passion and energy to everything I build.
+      </p>
+      <p style="text-align:center; font-weight:bold; margin-top: 30px; font-size:1.2rem; color:#00aaff;">
+        🚀 Let’s build the future, one line of code at a time.
       </p>
     </section>
+    
 
+    <!-- Skills Section -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
@@ -70,81 +69,136 @@
         <div class="skill-box"><i class="fab fa-react"></i><p>React</p></div>
         <div class="skill-box"><i class="fas fa-database"></i><p>MySQL</p></div>
         <div class="skill-box"><i class="fab fa-java"></i><p>Java</p></div>
-        <div class="skill-box"><i class="fas fa-bug"></i><p>Debugging</p></div>
+        
       </div>
     </section>
-    
 
-    <div class="projects" id="project">
+    <!-- Projects Section -->
+    <section class="projects" id="project">
       <h2>Projects</h2>
 
       <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>A responsive portfolio website built using HTML, CSS, and JavaScript.</p>
-          <a href="https://github.com/AbhishekSharma7977/Portfolio" class="btn" target="_blank">Source Code</a>
-          <a href="https://abhisheksharma7977.github.io/Portfolio/" class="btn live" target="_blank">DEMO</a>
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/AbhishekSharma7977/Portfolio" class="btn" target="_blank">Source Code</a>
+        
       </div>
+
       <div class="project-card">
-        <h3>Chat Application</h3>
-        <p>Designed a Chat Application that allows users to communicate in real time</p>
+        <h3>CHAT Application</h3>
+        <p>Designed a Chat Application that allows users to communicate in real time.</p>
         <a href="https://github.com/AbhishekSharma7977/chat" class="btn" target="_blank">Source Code</a>
-       
-    </div>
-
-      
-
-
-
-      <div class="project-card">
-          <h3>Bank Management System</h3>
-          <p>A system to manage bank transactions and accounts.</p>
-          <a href="https://github.com/AbhishekSharma7977/Bank-Managment-System" class="btn" target="_blank">Source
-              Code</a>
-
       </div>
+      <div class="project-card">
+        <h3>Bank Management System</h3>
+        <p>A system to manage bank transactions and accounts.</p>
+        <a href="https://github.com/AbhishekSharma7977/Bank-Managment-System" class="btn" target="_blank">Source Code</a>
+      </div>
+    </section>
 
-  </div>
-    <div class="certificate" id="certifications">
+    <!-- Certifications Section -->
+    <section class="certificate" id="certifications">
       <h2>Certifications</h2>
       <ul class="certsContainer">
-          <li class="certs">
-              <img src="DSA.jpg" alt="" height="180px" width="300px" style="border-radius: 10px;">
-              <p>Data Structure And Algorithm (DSA)</p>
-              <p>Provide By: GeeksForGeeks</p>
-              <a href="https://media.geeksforgeeks.org/courses/certificates/0420db5dc1993f2fcc2da053729c72a8.pdf"><button>Show Credentials</button></a>
-          </li>
-          <li class="certs">
-              <img src="DSA2.jpg" alt="" height="180px" width="300px" style="border-radius: 10px;">
-              <p>Mastering Data Structures &
-                Algorithms using C and C++</p>
-              <p>Provide By: Udemy</p>
-              <a href="https://drive.google.com/file/d/1nyzT-wyZ4MRPYdEj2d-Pcluj7kW3MsRG/view?usp=sharing"><button>Show Credentials</button></a>
-          </li>
-          <li class="certs">
-              <img src="CPP.jpg" alt="" height="180px" width="300px" style="border-radius: 10px;">
-              <p> Programming in C++: A
-                Hands-on Introduction</p>
-              <p>Provide By: Coursera</p>
-              <a href="https://www.coursera.org/account/accomplishments/specialization/J5U2EJWCXYHY"><button>Show Credentials</button></a>
-          </li>
-          <li class="certs">
-              <img src="NPTEL.jpg" alt="" height="180px" width="300px" style="border-radius: 10px;">
-              <p>CLOUD COMPUTING</p>
-              <p>Provide By: NPTEL</p>
-              <a href="https://drive.google.com/file/d/19-6APpcx_m2D-nfDkq1klgG5N6n29llO/view?usp=sharing"><button>Show Credentials</button></a>
-          </li>
-         
-          
+        <li class="certs">
+          <img src="DSA.jpg" alt="DSA Certificate" />
+          <p>Data Structure And Algorithm (DSA)</p>
+          <p>Provided By: GeeksForGeeks</p>
+          <a href="https://media.geeksforgeeks.org/courses/certificates/0420db5dc1993f2fcc2da053729c72a8.pdf" target="_blank">
+            <button>Show Credentials</button>
+          </a>
+        </li>
+
+        <li class="certs">
+          <img src="DSA2.jpg" alt="Udemy DSA Certificate" />
+          <p>Mastering Data Structures & Algorithms using C and C++</p>
+          <p>Provided By: Udemy</p>
+          <a href="https://drive.google.com/file/d/1nyzT-wyZ4MRPYdEj2d-Pcluj7kW3MsRG/view" target="_blank">
+            <button>Show Credentials</button>
+          </a>
+        </li>
+
+        <li class="certs">
+          <img src="CPP.jpg" alt="Coursera C++ Certificate" />
+          <p>Programming in C++: A Hands-on Introduction</p>
+          <p>Provided By: Coursera</p>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/J5U2EJWCXYHY" target="_blank">
+            <button>Show Credentials</button>
+          </a>
+        </li>
+
+        <li class="certs">
+          <img src="NPTEL.jpg" alt="NPTEL Cloud Computing Certificate" />
+          <p>Cloud Computing</p>
+          <p>Provided By: NPTEL</p>
+          <a href="https://drive.google.com/file/d/19-6APpcx_m2D-nfDkq1klgG5N6n29llO/view" target="_blank">
+            <button>Show Credentials</button>
+          </a>
+        </li>
       </ul>
-  </div>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Phone: +91-9812351733</p>
-      <p>Location: Ambala (Haryana), India</p>
     </section>
-  </main>
 
-  
+    <!-- Contact Section -->
+    <<section id="contact">
+      <h2>Get in Touch</h2>
+    
+      <!-- Download Resume Button -->
+      <div class="resume-download">
+        <a href="https://drive.google.com/file/d/1nhAkMSpTizcPTRf2dhttakVfGeS9A1MV/view?usp=sharing" download class="btn-resume-glow" target="_blank">
+          <span class="icon"><i class="fas fa-file-download"></i></span>
+          <span class="text">Download Resume</span>
+        </a>
+      </div>
+    
+      <div class="contact-container">
+        <div class="contact-card">
+          <i class="fas fa-phone-alt contact-icon"></i>
+          <h3>Phone</h3>
+          <p>+91-9812351733</p>
+        </div>
+    
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt contact-icon"></i>
+          <h3>Location</h3>
+          <p>Ambala, Haryana, India</p>
+        </div>
+      </div>
+    
+    
+     
+    
+      <div class="social-icons">
+        <a href="https://github.com/AbhishekSharma7977" target="_blank" data-name="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abhisheksharma7977" target="_blank" data-name="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:7977abhisheksharma@gmail.com" target="_blank" data-name="Gmail"><i class="fas fa-envelope contact-icon"></i></a>
+        <a href="https://www.instagram.com/thetyagiabhishek" target="_blank" data-name="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+    <div class="animated-bg">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="grad1" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#00aaff" />
+            <stop offset="100%" stop-color="#5500ff" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#grad1)">
+          <animate attributeName="d" dur="10s" repeatCount="indefinite"
+            values="
+            M0,100 C300,200 900,0 1200,100 L1200,200 L0,200 Z;
+            M0,100 C300,0 900,200 1200,100 L1200,200 L0,200 Z;
+            M0,100 C300,200 900,0 1200,100 L1200,200 L0,200 Z" />
+        </path>
+      </svg>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Abhishek Sharma. All rights reserved.</p>
+        
+      </div>
+    </footer>
+    
+    
+  </main>
 </body>
 </html>
